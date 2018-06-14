@@ -1,7 +1,0 @@
-{
-  "discoveryUrl": "https://oidcws.accessacloud.com/api/v1/widgets/approve/discovery",
-  "settings": {
-    "endpoint": "https://oidcws.accessacloud.com/api/v1/widgets/approve/",
-    "baseUrl": "https://oidcgo.accessacloud.com/app/approve/"
-  }
-}
