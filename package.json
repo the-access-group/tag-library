@@ -1,0 +1,36 @@
+{
+  "name": "@the-access-group/tag-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/tag-library.js",
+  "browser": "dist/tag-library.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "start": "npm run build && serve .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-access-group/tag-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-access-group/tag-library/issues"
+  },
+  "homepage": "https://github.com/the-access-group/tag-library#readme",
+  "dependencies": {
+    "@stencil/core": "^0.7.18"
+  },
+  "devDependencies": {
+    "@stencil/utils": "0.0.4",
+    "serve": "^6.5.3"
+  }
+}
