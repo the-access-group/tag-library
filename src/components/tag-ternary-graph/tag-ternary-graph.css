@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+.plot + .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    font-family: 'Lato', 'Roboto';
+    transition: opacity 0.3s;
+}
+
+.plot + .tooltiptext::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    font-family: 'Lato', 'Roboto';
+}
+
+
+ .plot:hover +.tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    font-family: 'Lato', 'Roboto';
+}
+.text {
+    font-family: 'Lato', 'Roboto'
+}

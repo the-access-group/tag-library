@@ -23,3 +23,87 @@ declare global {
   interface HTMLAttributes {}
 }
 
+
+declare global {
+
+  namespace StencilComponents {
+    interface TagTernaryGraph {
+      'aHex': string;
+      'abAxisLabel': string;
+      'abFadeName': string;
+      'abFadeURL': string;
+      'abMixHex': string;
+      'abMixOpacity': string;
+      'abTextPathHref': string;
+      'abTextPathName': string;
+      'acAxisLabel': string;
+      'acTextPathHref': string;
+      'acTextPathName': string;
+      'axisLabelFontSize': number;
+      'bHex': string;
+      'bcAxisLabel': string;
+      'bcTextPathHref': string;
+      'bcTextPathName': string;
+      'cFadeEndHex': string;
+      'cFadeEndOpacity': string;
+      'cFadeName': string;
+      'cFadeURL': string;
+      'cHex': string;
+      'circleRadius': number;
+      'corners': {"A":{"X","Y"}, "B":{"X","Y"},"C":{"X","Y"}};
+      'plotArray': Array<{"X","Y","Label"}>;
+      'recordArray': Array<{"A","B","C","Label"}>;
+    }
+  }
+
+  interface HTMLTagTernaryGraphElement extends StencilComponents.TagTernaryGraph, HTMLStencilElement {}
+
+  var HTMLTagTernaryGraphElement: {
+    prototype: HTMLTagTernaryGraphElement;
+    new (): HTMLTagTernaryGraphElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tag-ternary-graph': HTMLTagTernaryGraphElement;
+  }
+  interface ElementTagNameMap {
+    'tag-ternary-graph': HTMLTagTernaryGraphElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tag-ternary-graph': JSXElements.TagTernaryGraphAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TagTernaryGraphAttributes extends HTMLAttributes {
+      'aHex'?: string;
+      'abAxisLabel'?: string;
+      'abFadeName'?: string;
+      'abFadeURL'?: string;
+      'abMixHex'?: string;
+      'abMixOpacity'?: string;
+      'abTextPathHref'?: string;
+      'abTextPathName'?: string;
+      'acAxisLabel'?: string;
+      'acTextPathHref'?: string;
+      'acTextPathName'?: string;
+      'axisLabelFontSize'?: number;
+      'bHex'?: string;
+      'bcAxisLabel'?: string;
+      'bcTextPathHref'?: string;
+      'bcTextPathName'?: string;
+      'cFadeEndHex'?: string;
+      'cFadeEndOpacity'?: string;
+      'cFadeName'?: string;
+      'cFadeURL'?: string;
+      'cHex'?: string;
+      'circleRadius'?: number;
+      'corners'?: {"A":{"X","Y"}, "B":{"X","Y"},"C":{"X","Y"}};
+      'plotArray'?: Array<{"X","Y","Label"}>;
+      'recordArray'?: Array<{"A","B","C","Label"}>;
+    }
+  }
+}
+
+declare global { namespace JSX { interface StencilJSX {} } }
+
+export declare function defineCustomElements(window: any): void;
