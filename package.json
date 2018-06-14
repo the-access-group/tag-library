@@ -27,10 +27,13 @@
   },
   "homepage": "https://github.com/the-access-group/tag-library#readme",
   "dependencies": {
-    "@stencil/core": "^0.7.18"
+    "@stencil/core": "0.9.2",
+    "@stencil/router": "0.0.28"
   },
   "devDependencies": {
-    "@stencil/utils": "0.0.4",
+    "@stencil/dev-server": "latest",
+    "@stencil/sass": "0.0.3",
+    "@stencil/utils": "latest",
     "serve": "^6.5.3"
   }
 }
